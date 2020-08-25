@@ -1,0 +1,57 @@
+<div class="card" [class.border-primary]="isSelectedBlock()">
+  <div class="card-body bg-info">
+    <h5 class="card-title text-white">
+      Block {{ getBlockNumber() }}
+      <small class="text-warning" *ngIf="block.previousHash == 0"
+        >(Genesis block)</small
+      >
+    </h5>
+  </div>
+
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">
+      <span class="">Hash</span>
+      <br />
+      <div
+        class="text-truncate"
+        [style.color]="'#' + block.hash.substring(0, 6)"
+      >
+        <small>{{ block.hash }}</small>
+      </div>
+
+      <br />
+      <span class="">Hash of previous block</span>
+      <br />
+
+      <div
+        class="text-truncate"
+        [style.color]="'#' + block.previousHash.substring(0, 6)"
+      >
+        <small>{{ block.previousHash }}</small>
+      </div>
+    </li>
+
+    <li class="list-group-item">
+      <span class="">Nonce</span><br />
+      <div class="text-truncate text-muted">
+        <small>{{ block.nonce }}</small>
+      </div>
+    </li>
+
+    <li class="list-group-item">
+      <span class="">Timestamp</span><br />
+      <div class="text-truncate text-muted">
+        <small>{{ block.timestamp }}</small>
+      </div>
+    </li>
+
+    <li class="list-group-item">
+      <button class="btn btn-primary">Show Transactions</button>
+    </li>
+  </ul>
+
+  <!-- <div class="card-body"> -->
+  <!-- <span class="card-link" *ngIf="!blockHasTx()">Block has no transactions</span> -->
+  <!-- <span class="card-link" *ngIf="blockHasTx()">Contains {{block.transactions.length}} transactions</span> -->
+  <!-- </div> -->
+</div>

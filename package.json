@@ -1,0 +1,22 @@
+{
+  "name": "ledgercoin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node server.js",
+    "server": "cd expressapp && npm start",
+    "client": "npm start --prefix=frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vijethph"
+  },
+  "author": "vijeth p h",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "concurrently": "^5.2.0"
+  }
+}
