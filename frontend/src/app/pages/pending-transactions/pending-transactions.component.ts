@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { Router, ActivatedRoute } from "@angular/router";
-import { BlockchainService } from "app/services/blockchain.service";
+import { BlockchainService } from "../../services/blockchain.service";
 
 @Component({
   selector: "app-pending-transactions",

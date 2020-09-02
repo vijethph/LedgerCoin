@@ -1,26 +1,25 @@
-import { Component, OnInit } from "@angular/core";
-import { Router } from "@angular/router";
-import { BlockchainService, IWalletKey } from "app/services/blockchain.service";
-import { Transaction } from "SavjeeCoin/src/blockchain";
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
+import { BlockchainService, IWalletKey } from '../../services/blockchain.service';
+import { Transaction } from 'SavjeeCoin/src/blockchain';
 
 @Component({
-  selector: "app-create-transaction",
-  templateUrl: "./create-transaction.component.html",
-  styleUrls: ["./create-transaction.component.scss"],
+  selector: 'app-create-transaction',
+  templateUrl: './create-transaction.component.html',
+  styleUrls: ['./create-transaction.component.scss']
 })
 export class CreateTransactionComponent implements OnInit {
   public newTx = new Transaction();
   public ownWalletKey: IWalletKey;
 
-  constructor(
-    private blockchainService: BlockchainService,
-    private router: Router
-  ) {
+  constructor(private blockchainService: BlockchainService, private router: Router) {
     this.newTx = new Transaction();
     this.ownWalletKey = blockchainService.walletKeys[0];
   }
 
-  ngOnInit() {}
+  ngOnInit() {
+  }
 
   createTransaction() {
     const newTx = this.newTx;
@@ -36,7 +35,7 @@ export class CreateTransactionComponent implements OnInit {
       return;
     }
 
-    this.router.navigate(["/new/transaction/pending", { addedTx: true }]);
+    this.router.navigate(['/new/transaction/pending', { addedTx: true }]);
     this.newTx = new Transaction();
   }
 }
