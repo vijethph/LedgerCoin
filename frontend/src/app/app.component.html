@@ -23,14 +23,14 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
-    <button class="btn btn-outline-light" [routerLink]="['/register']">
+    <button class="btn btn-outline-primary" [routerLink]="['/register']">
       Register
       <span class="sr-only">(current)</span>
     </button>
 
     &nbsp;
 
-    <button class="btn btn-outline-light" [routerLink]="['/login']">
+    <button class="btn btn-outline-primary" [routerLink]="['/login']">
       Login
     </button>
 
@@ -38,7 +38,7 @@
 
     <button
       *ngIf="isUserLoggedIn()"
-      class="btn btn-outline-light"
+      class="btn btn-outline-primary"
       [routerLink]="['/user']"
     >
       User Profile
@@ -48,7 +48,7 @@
     
     <button
       *ngIf="isUserLoggedIn()"
-      class="btn btn-outline-light"
+      class="btn btn-outline-primary"
       [routerLink]="['/userprofile']"
     >
       Blockchain
@@ -58,26 +58,26 @@
   <div *ngIf="isUserLoggedIn()">
     <button
       routerLink="/new/transaction/pending"
-      class="btn btn-outline-light"
+      class="btn btn-outline-info"
       *ngIf="thereArePendingTransactions()"
     >
       Pending transactions
-      <span class="badge badge-light">{{
+      <span class="badge badge-warning">{{
         blockchain.pendingTransactions.length
       }}</span>
     </button>
     &nbsp;
-    <button routerLink="/settings" class="btn btn-outline-light">
+    <button routerLink="/settings" class="btn btn-outline-primary">
       Settings
     </button>
     &nbsp;
-    <button routerLink="/new/transaction" class="btn btn-outline-light">
+    <button routerLink="/new/transaction" class="btn btn-outline-primary">
       Create transaction
     </button>
   </div>
 </nav>
 
-<div class="container-fluid">
+<div class="container-fluid" id="mainthing">
   <div class="row">
     
       <router-outlet></router-outlet>

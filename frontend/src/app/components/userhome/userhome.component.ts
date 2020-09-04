@@ -5,7 +5,7 @@ import { Router } from "@angular/router";
 @Component({
   selector: "app-userhome",
   templateUrl: "./userhome.component.html",
-  styleUrls: ["./userhome.component.css"],
+  styleUrls: ["./userhome.component.scss"],
 })
 export class UserhomeComponent implements OnInit {
   username: String = "";

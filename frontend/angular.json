@@ -22,9 +22,12 @@
               "src/favicon.ico"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+            "src/three.r119.min.js",
+            "src/vanta.net.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -78,7 +81,7 @@
             "tsConfig": "src/tsconfig.spec.json",
             "scripts": [],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "assets": [
               "src/assets",
@@ -130,7 +133,8 @@
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",
-      "style": "css"
+      "style": "css",
+      "styleext": "scss"
     },
     "@schematics/angular:directive": {
       "prefix": "app"

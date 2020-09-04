@@ -46,12 +46,11 @@
       [(ngModel)]="newTx.amount"
     />
     <small id="amountHelp" class="form-text text-muted">
-      You can transfer any amount. Account balance is not checked in this demo.
-      Have at it!
+      You can transfer any amount. Account balance is not checked.
     </small>
   </div>
 
   <button (click)="createTransaction()" type="submit" class="btn btn-primary">
-    Sign & create transaction
+    Sign & create transaction <i class="fas fa-cart-plus"></i>
   </button>
 </div>

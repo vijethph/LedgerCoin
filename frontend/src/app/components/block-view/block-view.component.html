@@ -1,5 +1,5 @@
 <div class="card" [class.border-primary]="isSelectedBlock()">
-  <div class="card-body bg-info">
+  <div class="card-body" style="background-color:#0077b6" >
     <h5 class="card-title text-white">
       Block {{ getBlockNumber() }}
       <small class="text-warning" *ngIf="block.previousHash == 0"
@@ -8,8 +8,8 @@
     </h5>
   </div>
 
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">
+  <ul class="list-group list-group-flush" >
+    <li class="list-group-item" style="background-color:#264653">
       <span class="">Hash</span>
       <br />
       <div
@@ -31,21 +31,21 @@
       </div>
     </li>
 
-    <li class="list-group-item">
+    <li class="list-group-item" style="background-color:#264653">
       <span class="">Nonce</span><br />
       <div class="text-truncate text-muted">
         <small>{{ block.nonce }}</small>
       </div>
     </li>
 
-    <li class="list-group-item">
+    <li class="list-group-item" style="background-color:#264653">
       <span class="">Timestamp</span><br />
       <div class="text-truncate text-muted">
         <small>{{ block.timestamp }}</small>
       </div>
     </li>
 
-    <li class="list-group-item">
+    <li class="list-group-item" style="background-color:#264653">
       <button class="btn btn-primary">Show Transactions</button>
     </li>
   </ul>

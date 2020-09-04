@@ -26,6 +26,8 @@
     "core-js": ">=3.6.5",
     "SavjeeCoin": "github:SavjeeTutorials/SavjeeCoin#5cc294c488604546526bf277eceef9ea443b762b",
     "savjeecoin": "^1.0.1",
+    "bootstrap": "^4.5.2",
+    "bootstrap-sass": "^3.4.1",
     "rxjs": ">=6.6.2",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
