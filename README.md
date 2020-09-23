@@ -44,7 +44,7 @@
 
 ## About The Project
 
-<img src="blocksonchain.png" width="210" height="450" alt="Project working"> <img src="registerpage.png" width="210" height="450" alt="second screenshot">
+<img src="blocksonchain.png" width="470" height="400" alt="Project working"> <img src="registerpage.png" width="470" height="400" alt="second screenshot">
 
 This is a Angular app that uses [MongoDB](https://www.mongodb.com), [Express Framework](https://expressjs.com), [Node.js](https://nodejs.org/en) and [Angular Framework](https://angular.io) to visualize the working of Blockchain, with user authentication. It uses a simple implementation of Blockchain with Proof-of-Work algorithm, verification, wallet generation and transaction signing features. It also makes use of [CoinGecko API](https://www.coingecko.com/en/api) to display the latest currency exchange rates with respect to BitCoin.
 
