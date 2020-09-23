@@ -28,6 +28,7 @@
     "savjeecoin": "^1.0.1",
     "bootstrap": "^4.5.2",
     "bootstrap-sass": "^3.4.1",
+    "ngx-particle": "^1.5.0",
     "particles.js": "^2.0.0",
     "rxjs": ">=6.6.2",
     "tslib": "^2.0.0",
