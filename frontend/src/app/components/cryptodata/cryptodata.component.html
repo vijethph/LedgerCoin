@@ -1,0 +1,24 @@
+<br>
+<br>
+<div class="container" style="margin-left: 120px;"> 
+<h1>Bitcoin Exchange Rates</h1> 
+
+<table class="table table-hover table-dark table-striped table-bordered" id='tab' > 
+    <thead> 
+    <tr class="bg-success text-white"> 
+        <th scope="col">Currency Code</th> 
+        <th scope="col">Currency Name</th> 
+        <th scope="col">Exchange Rate</th> 
+        <th scope="col">Currency Type</th>
+    </tr> 
+    </thead> 
+    <tbody> 
+    <tr *ngFor="let e of firstthree.rates | keyvalue"> 
+        <td style="text-transform: uppercase;">{{ e.key}}</td> 
+        <td>{{ e.value.name }}</td> 
+        <td>{{ e.value.value }}  <span [innerHTML]="e.value.unit"></span></td>  
+        <td>{{ e.value.type }}</td>
+    </tr> 
+    </tbody> 
+</table>           
+</div>

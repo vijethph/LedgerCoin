@@ -1,5 +1,6 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
+import { ParticlesModule } from 'ngx-particle';
 
 import { AppRoutingModule } from "./app-routing.module";
 
@@ -19,6 +20,7 @@ import { TransactionsTableComponent } from "./components/transactions-table/tran
 import { CreateTransactionComponent } from "./pages/create-transaction/create-transaction.component";
 import { PendingTransactionsComponent } from "./pages/pending-transactions/pending-transactions.component";
 import { WalletBalanceComponent } from "./pages/wallet-balance/wallet-balance.component";
+import { CryptodataComponent } from './components/cryptodata/cryptodata.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,7 @@ import { WalletBalanceComponent } from "./pages/wallet-balance/wallet-balance.co
     CreateTransactionComponent,
     PendingTransactionsComponent,
     WalletBalanceComponent,
+    CryptodataComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,6 +43,7 @@ import { WalletBalanceComponent } from "./pages/wallet-balance/wallet-balance.co
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    ParticlesModule,
   ],
   providers: [UserService, BlockchainService],
   bootstrap: [AppComponent],

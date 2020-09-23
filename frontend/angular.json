@@ -25,8 +25,7 @@
               "src/styles.scss"
             ],
             "scripts": [
-            "src/three.r119.min.js",
-            "src/vanta.net.min.js"
+            "node_modules/particles.js/particles.js"
             ]
           },
           "configurations": {
