@@ -16,7 +16,7 @@ app.use(cors({
 
 var mongoose =require('mongoose');
 
-mongoose.connect('mongodb://blockguy:block123@localhost:27017/ledgercoin');
+mongoose.connect('YOUR_MONGODB_URI_HERE');
 
 //passport
 var passport = require('passport');
