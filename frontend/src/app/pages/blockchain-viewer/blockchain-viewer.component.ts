@@ -1,5 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { BlockchainService } from '../../services/blockchain.service';
+import { UserService } from "../../services/user.service";
+import { Router } from "@angular/router";
+
 @Component({
   selector: 'app-blockchain-viewer',
   templateUrl: './blockchain-viewer.component.html',
@@ -10,7 +13,11 @@ export class BlockchainViewerComponent implements OnInit {
   public blocks = [];
   public selectedBlock = null;
 
-  constructor(private blockchainService: BlockchainService) {
+  constructor(private blockchainService: BlockchainService,private _user: UserService, private _router: Router) {
+  this._user.user().subscribe(
+      (data) => { },
+      (error) => this._router.navigate(["/login"])
+    );
     this.blocks = blockchainService.blockchainInstance.chain;
     this.selectedBlock = this.blocks[0];
     console.log(this.blocks);

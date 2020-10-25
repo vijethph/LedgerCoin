@@ -7,7 +7,7 @@
     "test": "node server.js",
     "server": "cd expressapp && npm start",
     "client": "npm start --prefix=frontend",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "start": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,9 @@
   "dependencies": {},
   "devDependencies": {
     "concurrently": "^5.2.0"
-  }
+  },
+  "engines": {
+    "node": "12.x"
+  },
+
 }

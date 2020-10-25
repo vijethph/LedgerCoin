@@ -16,7 +16,7 @@ app.use(cors({
 
 var mongoose =require('mongoose');
 
-mongoose.connect('YOUR_MONGODB_URI_HERE');
+mongoose.connect(process.env.MONGO_URI);
 
 //passport
 var passport = require('passport');
