@@ -21,6 +21,7 @@ import { CreateTransactionComponent } from "./pages/create-transaction/create-tr
 import { PendingTransactionsComponent } from "./pages/pending-transactions/pending-transactions.component";
 import { WalletBalanceComponent } from "./pages/wallet-balance/wallet-balance.component";
 import { CryptodataComponent } from './components/cryptodata/cryptodata.component';
+import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { CryptodataComponent } from './components/cryptodata/cryptodata.componen
     PendingTransactionsComponent,
     WalletBalanceComponent,
     CryptodataComponent,
+    PagenotfoundComponent,
   ],
   imports: [
     BrowserModule,
