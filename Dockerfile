@@ -38,11 +38,10 @@ RUN npm install --production
 # Copy the dist tree from the first stage.
 COPY --chown=node:node --from=build /usr/src/app .
 COPY --chown=node:node --from=build /usr/src/app/client/dist/client ./public/
-RUN ls -R
 
 USER node
 
 # Run the built application when the container starts.
-EXPOSE 3000
+EXPOSE 3000 10000
 CMD ["node", "server.js"]
 

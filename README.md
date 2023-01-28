@@ -13,7 +13,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/vijethph/LedgerCoin">
-    <img src="frontend/src/assets/blockchain.svg" alt="Logo" width="120" height="120">
+    <img src="client/src/assets/blockchain.svg" alt="Logo" width="120" height="120">
   </a>
 
   <h2 align="center">LedgerCoin</h2>
