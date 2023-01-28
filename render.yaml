@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: ledgercoin-app
+    env: docker
+    repo: https://github.com/vijethph/LedgerCoin.git
+    plan: free
+    healthCheckPath: /
+    envVars:
+      - key: MONGO_URI
+        sync: false
+      - key: PORT
+        value: 10000
+
+

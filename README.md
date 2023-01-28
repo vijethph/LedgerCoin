@@ -4,8 +4,11 @@
 [![GitHub forks](https://img.shields.io/github/forks/vijethph/LedgerCoin?color=blue&style=flat-square)](https://github.com/vijethph/LedgerCoin/network)
 [![GitHub stars](https://img.shields.io/github/stars/vijethph/LedgerCoin?color=yellow&style=flat-square)](https://github.com/vijethph/LedgerCoin/stargazers)
 [![GitHub license](https://img.shields.io/github/license/vijethph/LedgerCoin?style=flat-square)](https://github.com/vijethph/LedgerCoin/blob/master/LICENSE)
-[![made-with-flutter](https://img.shields.io/badge/made%20with-angular-1abc9c.svg?style=for-the-badge&labelColor=2c3e50)](https://www.android.com)
+[![Made with TypeScript](https://img.shields.io/badge/made%20with-typescript-blue?style=for-the-badge&logo=typescript&labelColor=023047)](https://www.typescriptlang.org/)
+[![made-with-angular](https://img.shields.io/badge/made%20with-angular-1abc9c.svg?style=for-the-badge&labelColor=2c3e50)](https://angular.io/)
 [![forthebadge](https://forthebadge.com/images/badges/powered-by-black-magic.svg)](https://forthebadge.com)
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/vijethph/LedgerCoin)
+
 
 <br />
 <p align="center">
@@ -52,11 +55,12 @@ This is a Angular app that uses [MongoDB](https://www.mongodb.com), [Express Fra
 
 This project is entirely built with the following components and languages:
 
-- [MongoDB](https://www.mongodb.com)
-- [Express Framework](https://expressjs.com/)
-- [Angular Framework](https://angular.io)
-- [Node.js Runtime](https://nodejs.org/en)
-- [CoinGecko API](https://www.coingecko.com/en/api)
+- [MongoDB](https://www.mongodb.com) - NoSQL Database
+- [Express](https://expressjs.com/) - Server Framework
+- [Angular Framework](https://angular.io) - Frontend Component-based Framework
+- [Node.js Runtime](https://nodejs.org/en) - Server Environment
+- [TypeScript](https://www.typescriptlang.org/) - Programming Language
+- [CoinGecko API](https://www.coingecko.com/en/api) - Currency Exchange Rate API
 
 <!-- GETTING STARTED -->
 
@@ -66,7 +70,7 @@ Follow these instructions in order to get a copy of the project up and running o
 
 ### Prerequisites
 
-Node.js>=10 and MongoDB>=4.2 should be installed. After installation, check Node.js version, and MongoDB daemon status using
+Node.js>=16 and MongoDB>=4.2 should be present. After installation, check Node.js version, and MongoDB daemon status using
 
 ```sh
 node --version
@@ -87,7 +91,7 @@ git clone https://github.com/vijethph/LedgerCoin.git
 cd LedgerCoin
 ```
 
-3. Modify the MongoDB URI in `server.js` file inside `expressapp` folder as per your DB configuration. Then import the required dependencies in project folder, `expressapp` and `client` folders using
+3. Modify the MongoDB URI in `server.ts` file inside `src` folder as per your DB configuration. Then import the required dependencies in both of these folders: `src` and `client`, using
 
 ```sh
 npm install
@@ -99,7 +103,13 @@ npm install
 npm run dev
 ```
 
-The app should be running in `http://localhost:4200` in your browser.
+The app should be running in `http://localhost:3000` in your browser.   
+
+Another way to install this app is to use Docker Compose. Run this command to start the app:
+```
+docker-compose up
+```
+This will run the app at http://localhost:3000, which can be seen in your browser.
 
 <!-- USAGE EXAMPLES -->
 
